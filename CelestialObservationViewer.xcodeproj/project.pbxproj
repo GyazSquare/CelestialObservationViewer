@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		293F945D1D28F1F500687D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293F945C1D28F1F500687D1B /* Assets.xcassets */; };
+		293F946A1D28F25100687D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F94661D28F25100687D1B /* LaunchScreen.storyboard */; };
+		293F946B1D28F25100687D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F94681D28F25100687D1B /* Main.storyboard */; };
+		293F946E1D28F25800687D1B /* AccelerometerFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F946C1D28F25800687D1B /* AccelerometerFilter.swift */; };
+		293F946F1D28F25800687D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F946D1D28F25800687D1B /* AppDelegate.swift */; };
+		293F94711D28F25E00687D1B /* AstronomicalObservationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F94701D28F25E00687D1B /* AstronomicalObservationScene.swift */; };
+		293F94741D28F26500687D1B /* DeviceOrientationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F94721D28F26500687D1B /* DeviceOrientationPresenter.swift */; };
+		293F94751D28F26500687D1B /* GyroCompassScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F94731D28F26500687D1B /* GyroCompassScene.swift */; };
+		293F94771D28F26B00687D1B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 293F94761D28F26B00687D1B /* Info.plist */; };
+		293F947D1D28F27100687D1B /* MultiSampleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F94781D28F27100687D1B /* MultiSampleRenderer.swift */; };
+		293F947E1D28F27100687D1B /* OpenGLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F94791D28F27100687D1B /* OpenGLView.swift */; };
+		293F947F1D28F27100687D1B /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F947A1D28F27100687D1B /* PreviewView.swift */; };
+		293F94801D28F27100687D1B /* SceneRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F947B1D28F27100687D1B /* SceneRenderer.swift */; };
+		293F94811D28F27100687D1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F947C1D28F27100687D1B /* ViewController.swift */; };
+		293F94821D28F28300687D1B /* CelestialObservationViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F945E1D28F21C00687D1B /* CelestialObservationViewerTests.swift */; };
+		293F94831D28F28900687D1B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 293F945F1D28F21C00687D1B /* Info.plist */; };
+		293F94841D28F28C00687D1B /* CelestialObservationViewer UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F94621D28F23B00687D1B /* CelestialObservationViewer UITests.swift */; };
+		293F94851D28F29000687D1B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 293F94631D28F23B00687D1B /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2984F74B1D24BED80039AE7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2984F72E1D24BED80039AE7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2984F7351D24BED80039AE7F;
+			remoteInfo = FindStarViewer;
+		};
+		2984F7561D24BED80039AE7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2984F72E1D24BED80039AE7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2984F7351D24BED80039AE7F;
+			remoteInfo = FindStarViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		293F945C1D28F1F500687D1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CelestialObservationViewer/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		293F945E1D28F21C00687D1B /* CelestialObservationViewerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CelestialObservationViewerTests.swift; path = CelestialObservationViewerTests/CelestialObservationViewerTests.swift; sourceTree = SOURCE_ROOT; };
+		293F945F1D28F21C00687D1B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CelestialObservationViewerTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		293F94621D28F23B00687D1B /* CelestialObservationViewer UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CelestialObservationViewer UITests.swift"; path = "CelestialObservationViewerUITests/CelestialObservationViewer UITests.swift"; sourceTree = SOURCE_ROOT; };
+		293F94631D28F23B00687D1B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CelestialObservationViewerUITests/Info.plist; sourceTree = SOURCE_ROOT; };
+		293F94671D28F25100687D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CelestialObservationViewer/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		293F94691D28F25100687D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CelestialObservationViewer/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		293F946C1D28F25800687D1B /* AccelerometerFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccelerometerFilter.swift; path = CelestialObservationViewer/AccelerometerFilter.swift; sourceTree = SOURCE_ROOT; };
+		293F946D1D28F25800687D1B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CelestialObservationViewer/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		293F94701D28F25E00687D1B /* AstronomicalObservationScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AstronomicalObservationScene.swift; path = CelestialObservationViewer/AstronomicalObservationScene.swift; sourceTree = SOURCE_ROOT; };
+		293F94721D28F26500687D1B /* DeviceOrientationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceOrientationPresenter.swift; path = CelestialObservationViewer/DeviceOrientationPresenter.swift; sourceTree = SOURCE_ROOT; };
+		293F94731D28F26500687D1B /* GyroCompassScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GyroCompassScene.swift; path = CelestialObservationViewer/GyroCompassScene.swift; sourceTree = SOURCE_ROOT; };
+		293F94761D28F26B00687D1B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CelestialObservationViewer/Info.plist; sourceTree = SOURCE_ROOT; };
+		293F94781D28F27100687D1B /* MultiSampleRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultiSampleRenderer.swift; path = CelestialObservationViewer/MultiSampleRenderer.swift; sourceTree = SOURCE_ROOT; };
+		293F94791D28F27100687D1B /* OpenGLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenGLView.swift; path = CelestialObservationViewer/OpenGLView.swift; sourceTree = SOURCE_ROOT; };
+		293F947A1D28F27100687D1B /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewView.swift; path = CelestialObservationViewer/PreviewView.swift; sourceTree = SOURCE_ROOT; };
+		293F947B1D28F27100687D1B /* SceneRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneRenderer.swift; path = CelestialObservationViewer/SceneRenderer.swift; sourceTree = SOURCE_ROOT; };
+		293F947C1D28F27100687D1B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = CelestialObservationViewer/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		293F94891D28F5C000687D1B /* CelestialObservationViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CelestialObservationViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		293F948A1D28F5C000687D1B /* CelestialObservationViewer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelestialObservationViewer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		293F948B1D28F5C000687D1B /* CelestialObservationViewer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelestialObservationViewer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2984F7331D24BED80039AE7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2984F7471D24BED80039AE7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2984F7521D24BED80039AE7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2984F72D1D24BED80039AE7F = {
+			isa = PBXGroup;
+			children = (
+				2984F7381D24BED80039AE7F /* CelestialObservationViewer */,
+				2984F74D1D24BED80039AE7F /* CelestialObservationViewer Tests */,
+				2984F7581D24BED80039AE7F /* CelestialObservationViewer UITests */,
+				293F94891D28F5C000687D1B /* CelestialObservationViewer.app */,
+				293F948A1D28F5C000687D1B /* CelestialObservationViewer.xctest */,
+				293F948B1D28F5C000687D1B /* CelestialObservationViewer.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		2984F7381D24BED80039AE7F /* CelestialObservationViewer */ = {
+			isa = PBXGroup;
+			children = (
+				293F946C1D28F25800687D1B /* AccelerometerFilter.swift */,
+				293F946D1D28F25800687D1B /* AppDelegate.swift */,
+				293F94701D28F25E00687D1B /* AstronomicalObservationScene.swift */,
+				293F94721D28F26500687D1B /* DeviceOrientationPresenter.swift */,
+				293F94731D28F26500687D1B /* GyroCompassScene.swift */,
+				293F94781D28F27100687D1B /* MultiSampleRenderer.swift */,
+				293F94791D28F27100687D1B /* OpenGLView.swift */,
+				293F947A1D28F27100687D1B /* PreviewView.swift */,
+				293F947B1D28F27100687D1B /* SceneRenderer.swift */,
+				293F947C1D28F27100687D1B /* ViewController.swift */,
+				293F94761D28F26B00687D1B /* Info.plist */,
+				293F945C1D28F1F500687D1B /* Assets.xcassets */,
+				293F94661D28F25100687D1B /* LaunchScreen.storyboard */,
+				293F94681D28F25100687D1B /* Main.storyboard */,
+			);
+			name = CelestialObservationViewer;
+			path = FindStarViewer;
+			sourceTree = "<group>";
+		};
+		2984F74D1D24BED80039AE7F /* CelestialObservationViewer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				293F945E1D28F21C00687D1B /* CelestialObservationViewerTests.swift */,
+				293F945F1D28F21C00687D1B /* Info.plist */,
+			);
+			name = "CelestialObservationViewer Tests";
+			path = FindStarViewerTests;
+			sourceTree = "<group>";
+		};
+		2984F7581D24BED80039AE7F /* CelestialObservationViewer UITests */ = {
+			isa = PBXGroup;
+			children = (
+				293F94621D28F23B00687D1B /* CelestialObservationViewer UITests.swift */,
+				293F94631D28F23B00687D1B /* Info.plist */,
+			);
+			name = "CelestialObservationViewer UITests";
+			path = FindStarViewerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2984F7351D24BED80039AE7F /* CelestialObservationViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2984F75E1D24BED80039AE7F /* Build configuration list for PBXNativeTarget "CelestialObservationViewer" */;
+			buildPhases = (
+				2984F7321D24BED80039AE7F /* Sources */,
+				2984F7331D24BED80039AE7F /* Frameworks */,
+				2984F7341D24BED80039AE7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CelestialObservationViewer;
+			productName = FindStarViewer;
+			productReference = 293F94891D28F5C000687D1B /* CelestialObservationViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2984F7491D24BED80039AE7F /* CelestialObservationViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2984F7611D24BED80039AE7F /* Build configuration list for PBXNativeTarget "CelestialObservationViewerTests" */;
+			buildPhases = (
+				2984F7461D24BED80039AE7F /* Sources */,
+				2984F7471D24BED80039AE7F /* Frameworks */,
+				2984F7481D24BED80039AE7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2984F74C1D24BED80039AE7F /* PBXTargetDependency */,
+			);
+			name = CelestialObservationViewerTests;
+			productName = FindStarViewerTests;
+			productReference = 293F948A1D28F5C000687D1B /* CelestialObservationViewer.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2984F7541D24BED80039AE7F /* CelestialObservationViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2984F7641D24BED80039AE7F /* Build configuration list for PBXNativeTarget "CelestialObservationViewerUITests" */;
+			buildPhases = (
+				2984F7511D24BED80039AE7F /* Sources */,
+				2984F7521D24BED80039AE7F /* Frameworks */,
+				2984F7531D24BED80039AE7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2984F7571D24BED80039AE7F /* PBXTargetDependency */,
+			);
+			name = CelestialObservationViewerUITests;
+			productName = FindStarViewerUITests;
+			productReference = 293F948B1D28F5C000687D1B /* CelestialObservationViewer.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2984F72E1D24BED80039AE7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tanaka.takaaki;
+				TargetAttributes = {
+					2984F7351D24BED80039AE7F = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = T8SGT3SP8E;
+					};
+					2984F7491D24BED80039AE7F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2984F7351D24BED80039AE7F;
+					};
+					2984F7541D24BED80039AE7F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2984F7351D24BED80039AE7F;
+					};
+				};
+			};
+			buildConfigurationList = 2984F7311D24BED80039AE7F /* Build configuration list for PBXProject "CelestialObservationViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2984F72D1D24BED80039AE7F;
+			productRefGroup = 2984F72D1D24BED80039AE7F;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2984F7351D24BED80039AE7F /* CelestialObservationViewer */,
+				2984F7491D24BED80039AE7F /* CelestialObservationViewerTests */,
+				2984F7541D24BED80039AE7F /* CelestialObservationViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2984F7341D24BED80039AE7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293F946B1D28F25100687D1B /* Main.storyboard in Resources */,
+				293F94771D28F26B00687D1B /* Info.plist in Resources */,
+				293F946A1D28F25100687D1B /* LaunchScreen.storyboard in Resources */,
+				293F945D1D28F1F500687D1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2984F7481D24BED80039AE7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293F94831D28F28900687D1B /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2984F7531D24BED80039AE7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293F94851D28F29000687D1B /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2984F7321D24BED80039AE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293F947D1D28F27100687D1B /* MultiSampleRenderer.swift in Sources */,
+				293F946F1D28F25800687D1B /* AppDelegate.swift in Sources */,
+				293F94741D28F26500687D1B /* DeviceOrientationPresenter.swift in Sources */,
+				293F94801D28F27100687D1B /* SceneRenderer.swift in Sources */,
+				293F947E1D28F27100687D1B /* OpenGLView.swift in Sources */,
+				293F94811D28F27100687D1B /* ViewController.swift in Sources */,
+				293F947F1D28F27100687D1B /* PreviewView.swift in Sources */,
+				293F94751D28F26500687D1B /* GyroCompassScene.swift in Sources */,
+				293F946E1D28F25800687D1B /* AccelerometerFilter.swift in Sources */,
+				293F94711D28F25E00687D1B /* AstronomicalObservationScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2984F7461D24BED80039AE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293F94821D28F28300687D1B /* CelestialObservationViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2984F7511D24BED80039AE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293F94841D28F28C00687D1B /* CelestialObservationViewer UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2984F74C1D24BED80039AE7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2984F7351D24BED80039AE7F /* CelestialObservationViewer */;
+			targetProxy = 2984F74B1D24BED80039AE7F /* PBXContainerItemProxy */;
+		};
+		2984F7571D24BED80039AE7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2984F7351D24BED80039AE7F /* CelestialObservationViewer */;
+			targetProxy = 2984F7561D24BED80039AE7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		293F94661D28F25100687D1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				293F94671D28F25100687D1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		293F94681D28F25100687D1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				293F94691D28F25100687D1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2984F75C1D24BED80039AE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2984F75D1D24BED80039AE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2984F75F1D24BED80039AE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CelestialObservationViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.CelestialObservationViewer;
+				PRODUCT_NAME = CelestialObservationViewer;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2984F7601D24BED80039AE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CelestialObservationViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.CelestialObservationViewer;
+				PRODUCT_NAME = CelestialObservationViewer;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		2984F7621D24BED80039AE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CelestialObservationViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.CelestialObservationViewerTests;
+				PRODUCT_NAME = CelestialObservationViewer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelestialObservationViewer.app/CelestialObservationViewer";
+			};
+			name = Debug;
+		};
+		2984F7631D24BED80039AE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CelestialObservationViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.CelestialObservationViewerTests;
+				PRODUCT_NAME = CelestialObservationViewer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelestialObservationViewer.app/CelestialObservationViewer";
+			};
+			name = Release;
+		};
+		2984F7651D24BED80039AE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CelestialObservationViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.CelestialObservationViewerUITests;
+				PRODUCT_NAME = CelestialObservationViewer;
+				TEST_TARGET_NAME = CelestialObservationViewer;
+			};
+			name = Debug;
+		};
+		2984F7661D24BED80039AE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CelestialObservationViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.CelestialObservationViewerUITests;
+				PRODUCT_NAME = CelestialObservationViewer;
+				TEST_TARGET_NAME = CelestialObservationViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2984F7311D24BED80039AE7F /* Build configuration list for PBXProject "CelestialObservationViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2984F75C1D24BED80039AE7F /* Debug */,
+				2984F75D1D24BED80039AE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2984F75E1D24BED80039AE7F /* Build configuration list for PBXNativeTarget "CelestialObservationViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2984F75F1D24BED80039AE7F /* Debug */,
+				2984F7601D24BED80039AE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2984F7611D24BED80039AE7F /* Build configuration list for PBXNativeTarget "CelestialObservationViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2984F7621D24BED80039AE7F /* Debug */,
+				2984F7631D24BED80039AE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2984F7641D24BED80039AE7F /* Build configuration list for PBXNativeTarget "CelestialObservationViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2984F7651D24BED80039AE7F /* Debug */,
+				2984F7661D24BED80039AE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2984F72E1D24BED80039AE7F /* Project object */;
+}

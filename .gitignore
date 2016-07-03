@@ -1,0 +1,31 @@
+# OS X
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+profile
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+
+*.xcworkspace
+!defaults.xcworkspace
+
+# Bundler
+.bundle
+vendor/bundle
+bin
+
+# CocoaPods
+Pods/
+
+# Documents
+docs
+
