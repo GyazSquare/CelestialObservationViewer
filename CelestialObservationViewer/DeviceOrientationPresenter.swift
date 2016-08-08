@@ -202,7 +202,7 @@ class DeviceOrientationPresenter: NSObject {
 extension DeviceOrientationPresenter: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let newLocation = locations.last else { return }
-        if CLLocationCoordinate2DIsValid(newLocation.coordinate) { return }
+        if !CLLocationCoordinate2DIsValid(newLocation.coordinate) { return }
         
         let howRecent = newLocation.timestamp.timeIntervalSinceNow
         
